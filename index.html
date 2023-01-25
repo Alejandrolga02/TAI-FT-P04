@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<title>Practica 04</title>
+</head>
+
+<body>
+	<div class="container p-2">
+		<h2>Practica 04</h2>
+		<br>
+		<a id="btnPeticion" class="btn btn-dark mb-2 d-inline-block align-center">Petición</a>
+		<table class="table table-light table-striped table-hover d-none" id="respuesta">
+			<thead>
+				<th>Id</th>
+				<th>Id Album</th>
+				<th>Título</th>
+				<th>Imagen</th>
+			</thead>
+			<tbody id="tablaResultado">
+
+			</tbody>
+		</table>
+	</div>
+
+	<div class="modal fade" id="alertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Ventana emergente</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<img src="#" alt="Imagen completa" class="w-100" id="alertImg">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar Ventana</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/peticionAjax.js"></script>
+</body>
+
+</html>
